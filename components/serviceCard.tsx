@@ -6,15 +6,21 @@ import utilStyles from '../styles/utils.module.css'
 export interface ServiceCardProps {
 	title?: string
 	description?: string
+	image?: {
+		src: string
+		alt: string
+	}
 }
 
-export const ServiceCard = ({ title, description }: ServiceCardProps): React.ReactElement => {
+export const ServiceCard = ({ title, description, image }: ServiceCardProps): React.ReactElement => {
+	const { src, alt } = image
+	
 	return (
 		<Card>
 			<div className={utilStyles.imageCard}>
 				<Image
-					src="/images/plumber.png"
-					alt="plumber"
+					src={src}
+					alt={alt}
 					width={250}
 					height={250}
 					priority

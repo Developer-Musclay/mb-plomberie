@@ -1,6 +1,6 @@
 import { Send } from "@mui/icons-material"
 import { Box, FormControl, TextField, Button } from "@mui/material"
-import styles from '../styles/Contact.module.css'
+import utilStyles from '../styles/utils.module.css'
 import Image from 'next/image'
 
 const Contact = (): React.ReactElement => {
@@ -10,9 +10,9 @@ const Contact = (): React.ReactElement => {
 
 	return (
 		<>
-			<div className={styles.logoContainer}>
+			<div className={utilStyles.logoContainer}>
 				<Image
-					src="/mb-logo.png"
+					src="/images/mb-logo.png"
 					alt="MB Plomberie Logo"
 					width={300}
 					height={300}
@@ -26,7 +26,7 @@ const Contact = (): React.ReactElement => {
 					px: 6,
 				}}
 			>
-				<h4 className={styles.contact}>Décrivez-nous votre besoin, nous vous répondrons dans les meilleurs délais !</h4>
+				<h4 className={utilStyles.lightText}>Décrivez-nous votre besoin, nous vous répondrons dans les meilleurs délais !</h4>
 				<FormControl sx={{ width: '100%' }}>
 				<TextField 
 					id="email" 
@@ -40,7 +40,7 @@ const Contact = (): React.ReactElement => {
 					variant="standard"
 					margin="normal"
 				/>
-				<div className={styles.buttonContainer}>
+				<div className={utilStyles.buttonContainer}>
 					<Button onClick={handleClick} sx={{ mt: 5, width: '50%' }} size="small" variant="contained" endIcon={<Send />}>
 						Envoyer
 					</Button>

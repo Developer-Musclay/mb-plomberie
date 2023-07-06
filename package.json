@@ -9,6 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.3",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.6",
+    "@mui/styled-engine-sc": "^5.12.0",
     "@next/font": "13.1.1",
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",
@@ -18,6 +24,21 @@
     "next": "13.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "styled-components": "^5.3.10",
     "typescript": "4.9.4"
-  }
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^2.1.3"
+  },
+  "description": "site internet de l'entreprise MB Plomberie, services de plomberie professionnels",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "mb-plomberie"
+  },
+  "keywords": [
+    "mb-plomberie"
+  ],
+  "author": "Jeremy Dumas",
+  "license": "ISC"
 }

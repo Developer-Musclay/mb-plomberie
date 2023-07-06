@@ -40,7 +40,7 @@ export default function Home() {
             Contactez-moi !
           </Button>
         </Container>
-        <div>
+        <div className={utilStyles.serviceCards}>
           {Services.map((service, index) => (
             <ServiceCard 
               key={index}
@@ -85,20 +85,11 @@ export default function Home() {
           </Button>
         </Container>
         
-        <Container 
-          maxWidth="md"
-          sx={{
-            backgroundColor: '#1BA39C',
-            color: 'white',
-            p: 2,
-            px: 6,
-            textAlign: 'center',
-          }} 
-        >
+        <div className={utilStyles.footer}>
           <p>Tel : 06 95 47 60 58</p>
           <p>Adresse : 21 rue Thevenot Thibaud, 63000 Clermont-Ferrand</p>
           <p>E-mail : mb.plomberie63000@gmail.com</p>
-        </Container>
+        </div>
       </main>
     </>
   )

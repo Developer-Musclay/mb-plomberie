@@ -23,3 +23,17 @@
 	flex-direction: column;
 	align-items: center;
 }
+
+.serviceCards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.footer {
+	background-color: #1BA39C;
+	color: white;
+	padding: 2rem;
+	margin-top: 6rem;
+	text-align: center;
+}

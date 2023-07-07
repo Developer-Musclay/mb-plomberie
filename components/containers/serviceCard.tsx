@@ -1,7 +1,7 @@
-import { Card } from "./card"
-import { Title } from "./title"
+import { Card } from "../ui/styledSection"
+import { H1 } from "../ui/styledTitle"
 import Image from 'next/image'
-import utilStyles from '../styles/utils.module.css'
+import utilStyles from '../../styles/utils.module.css'
 
 export interface ServiceCardProps {
 	title?: string
@@ -13,11 +13,12 @@ export interface ServiceCardProps {
 }
 
 export const ServiceCard = ({ title, description, image }: ServiceCardProps): React.ReactElement => {
+	const { imageCard } = utilStyles
 	const { src, alt } = image
 	
 	return (
 		<Card>
-			<div className={utilStyles.imageCard}>
+			<div className={imageCard}>
 				<Image
 					src={src}
 					alt={alt}
@@ -26,7 +27,7 @@ export const ServiceCard = ({ title, description, image }: ServiceCardProps): Re
 					priority
 				/>
 			</div>
-			<Title>{title}</Title>
+			<H1>{title}</H1>
 			<p>{description}</p>
 		</Card>
 	)

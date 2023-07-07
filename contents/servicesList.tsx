@@ -1,4 +1,4 @@
-export const Services = [
+export const ServicesList = [
 	{
     image: {
       src: "/images/plumbing.png",

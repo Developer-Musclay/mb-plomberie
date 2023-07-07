@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Title = styled.h1`
+export const H1 = styled.h1`
   font-size: 1.6em;
   text-align: center;
   color: #1B7895;
